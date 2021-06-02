@@ -1,57 +1,181 @@
-body{
-  background-color: #a2d2ff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", sans-serif;
 }
 
-.img{
-  height: 100px;
-  border-radius:100px;
+.cabecalho {
+    background-color: #336699;
+    color: #ffffff;
+    padding: 15px;
+    height:12vh;
 }
 
-#nome{
-  color: rgb(255, 3, 3);
+.donatello .cabecalho{
+    background-color: #740f9c;
 }
 
-.titulo{
-  color: rgb(12, 12, 12);
-  padding: 1px;
-  background-color:;
-  text-align: center;
-  font-style: italic;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow',Arial, sans-serif;
-  box-shadow: 10px 10px 10px #0b0033b7;
+.michelangelo .cabecalho{
+    background-color: #e7630c;
 }
 
+.raphael .cabecalho{
+    background-color: red;
+}
 
-.caixa{
-  list-style-type: none;
-  text-align: center;
-  padding:0;
-  overflow: hidden;
-  border: 1px solid #777;
-  background-color:#80ffdb;
-  margin-left: 80px;
-  margin-right: 50px;
+.inicio .cabecalho{
+    background-color:green;
+    
 }
 
 
-li a{
-  display: block;
-  color:#7400b8;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-}
-li a:hover:not(.ativa){
-   background-color: rgb(228, 150, 4);
- }
-
- #tabela{
-   margin-left: 350px;
- }
+.conteudo{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
 }
 
+.artigo {
+    width: 70%;
+    padding:1%;
+    display: inline-block;
+}
+
+.perfil{
+    display:block;
+    margin: 25px auto;
+    max-width: 25%;
+}
+
+.barra-lateral-esquerda, .barra-lateral-direita {
+    width:15%;
+    display:inline-block;
+    height:80vh;
+}
+
+.barra-lateral-esquerda ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 1%;
+}
 
 
+.barra-lateral-esquerda li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #336699;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
- 
+.donatello .barra-lateral-esquerda li {
+    background-color: #740f9c;
+}
+
+.michelangelo .barra-lateral-esquerda li{
+    background-color: #e7630c;
+}
+
+.raphael .barra-lateral-esquerda li{
+    background-color: red;
+}
+
+.inicio .barra-lateral-esquerda li{
+    background-color: green;
+}
+
+.barra-lateral-esquerda li a {
+    color: #ffffff;
+    text-decoration: none;
+    width:100%;
+    display: block;
+}
+
+.inicio .barra-lateral-esquerda ul  {
+    text-align: left ;
+}
+
+.barra-lateral-esquerda li:hover {
+    background-color: #336699;
+}
+
+.donatello .barra-lateral-esquerda- li:hover {
+    background-color: #740f9c;
+}
+
+.michelangelo .barra-lateral-esquerda- li:hover {
+    background-color: #e7630c;
+}
+
+.raphael .barra-lateral-esquerda- li:hover {
+    background-color: red;
+}
+
+.iniciol .barra-lateral-esquerda- li:hover {
+    background-color:green;
+}
+
+.barra-lateral-direita h2{
+    color: #336699;
+    margin: 10px 0;
+}
+
+.donatello .barra-lateral-direita h2{
+    color: #740f9c;
+}
+
+.michelangelo .barra-lateral-direita h2{
+    color: #e7630c;
+}
+.raphael .barra-lateral-direita h2{
+    color: red;
+}
+
+.inicio .barra-lateral-direita h2{
+    color:green;
+}
+
+.rodape {
+    background:#336699;
+    padding:1%;
+    color: #FFF;
+}
+.donatello .rodape{
+    background: #740f9c;
+}
+
+.michelangelo .rodape{
+    background: #e7630c;
+}
+
+.raphael .rodape{
+    background: red;
+}
+
+.inicio .rodape{
+    background:green;
+}
+
+
+/* Desse ponto em diante estamos falando em responsive*/
+@media screen and (max-width: 768px) {
+    .barra-lateral-esquerda, .barra-lateral-direita {
+        width: 100%;
+        height: 100%;
+        padding:2%;
+    }
+
+    .artigo{
+        padding:2%;
+        width:100%;
+        display: inline-block;
+    }
+
+    .rodape {
+        padding:5%;
+    }    
+}
